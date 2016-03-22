@@ -128,6 +128,8 @@ Osem::Application.routes.draw do
   end
 
   get '/admin' => redirect('/admin/conference')
+  match '/tickets/index', :via => :get
 
   root to: 'conference#index', via: [:get, :options]
+  match ':controller(/:action(/:id))', :via => :get
 end

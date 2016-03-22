@@ -5,7 +5,9 @@ class TicketsController < ApplicationController
   authorize_resource :conference_registrations, class: Registration
   before_filter :check_load_resource, only: :index
 
-  def index; end
+  def index
+
+  end
 
   def check_load_resource
     if @tickets.empty?
