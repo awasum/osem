@@ -5,6 +5,7 @@
         Users
         - if @users
           = "(#{@users.length})"
+<<<<<<< HEAD
 .table-responsive
   %table.table.table-striped.table-bordered.table-hover.datatable
     %thead
@@ -16,6 +17,20 @@
       %th Roles
       %th View
       %th Edit
+=======
+.row
+  .col-md-12.table-responsive
+    %table.table.table-striped.table-bordered.table-hover.datatable
+      %thead
+        %th ID
+        %th State
+        %th Email
+        %th Name
+        %th Attended Conferences
+        %th Roles
+        %th View
+        %th Edit
+>>>>>>> upstream/master
       %tbody
         - @users.each do |user|
           %tr
